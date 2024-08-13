@@ -3,17 +3,11 @@ body {
     color: #ffffff;
 }
 .nav-bar{
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
 }
-.nav-a1 ul li{
-    list-style-type: none;
-  }
-.list-nav {
-    list-style-type: none;
-    
-}
-.nav-a2 ul{
+.l2st{
     display: flex;
     justify-content: space-between;
 }
