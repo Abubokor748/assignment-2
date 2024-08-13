@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: #ffffff;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-a1 ul li{
+    list-style-type: none;
+  }
+.list-nav {
+    list-style-type: none;
+    
+}
+.nav-a2 ul{
+    display: flex;
+    justify-content: space-between;
+}
