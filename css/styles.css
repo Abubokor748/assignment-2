@@ -1,13 +1,360 @@
+body{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 body {
     background-color: black;
     color: #ffffff;
+    margin-top: 20px;
+    font-size: 16px;
 }
+.special-font{
+    font-family: Miama, sans-serif;                                      
+}
+/* nav bar starts */
 .nav-bar{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    margin: 0 30px;
 }
-.l2st{
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.rest-nav {
     display: flex;
-    justify-content: space-between;
+    gap: 90px;
+    border: 1px dotted;
+    border-radius: 50px;
+    padding: 2px;
+    padding-top: 7px;
+}
+.color-sp{
+    color: rgba(230, 83, 60, 1);
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.special-case{
+    background-color: rgba(230, 83, 60, 1);
+    padding: 5px 20px;
+    border-radius: 40px;
+    margin-top: -5px;
+}
+.hide{
+    display: none;
+}
+/* nav bar done */
+/* nav-banner starts*/
+.nav-banner{
+    display: flex;
+    justify-content: space-evenly;
+}
+.ban-title{
+    font-size: 4rem;
+    font-weight: 800;
+}   
+.des{
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
+}
+.buttons{
+    margin-top: 30px;
+    font-weight: 600;
+}
+.btn{
+    background-color: rgba(230, 83, 60, 1);
+    color: #ffffff;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: 1px dotted;
+}
+.btn-color{
+    color: #ffffff;
+    background-color: black;
+    padding: 15px 40px;
+    border-radius: 50px;
+}
+/* nav-banner ends */
+/* habit section starts */
+.habit-title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.likha{
+    text-align: center;
+    margin-top: 20px;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    padding-left: 60px;
+}
+.card-img{
+    border-radius: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.habit-l-t{
+    font-weight: 600;
+    text-align: center;
+}
+.des{
+    text-align: center;
+}
+/* habit section ends */
+/* run section starts */
+.run{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+}
+.run-img{
+    width: 370px;
+}
+.run-img img{
+    width: 100%;
+    height: auto;
+}
+.run-title{
+    text-align: center;
+}
+.run-likha{
+    text-align: center;
+}
+/* run section done */
+/* Own section */
+
+
+/* Bmi section starts */
+.bmi-title{
+    text-align: center;    
+}
+.bmi-sec{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(34, 34, 34, 1);
+    margin: 30px;
+    padding: 50px;
+}
+.bmi-calculator-title{
+    text-align: center;
+}
+.form-opt{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.form-opt-sp{
+    grid-column: span 2;
+}
+.form-fix{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;    
+}
+#bmi-btn{
+    text-align: center;
+    width: 70px;
+}
+.bmi-table tr td{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid white;
+}
+.bmi-table{
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+/* bmi section ends */
+/* trainer section starts */
+.team-title{
+    text-align: center;    
+}
+.team-img{
+    width: 100%;
+    height: 300px;
+    /* max-height: 305px; */
+    /* object-fit: cover; */
+    object-position: cover;
+    border-radius: 10px;
+}
+.member-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 220px;
+    margin-top: 30px;
+    gap: 50px;
+}
+.member-card{
+    position: relative;
+}
+.card-text-1{
+    position: absolute;
+    top: 25%;
+    margin: 10px;
+}
+.card-text-2{
+    position: absolute;
+    top: 25%;
+    margin: 10px;
+}
+.card-text-3{
+    position: absolute;
+    top: 25%;
+    margin: 10px;
+}
+.card-text-4{
+    position: absolute;
+    bottom: 1%;
+    margin: 10px;
+}
+.card-text-5{
+    position: absolute;
+    bottom: 1%;
+    margin: 10px;
+}
+.card-text-6{
+    position: absolute;
+    bottom: 1%;
+    margin: 10px;
+}
+/* trainer section ends */
+/* footer strats */
+.footter{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.fotter{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    margin-top: -100px;
+    padding: 50px;
+}
+.fot-h{
+    text-align: center;
+}
+/* footer ends */
+
+
+@media screen and (max-width:576px) {
+    .special-font
+    /* nav-bar starts */
+    *{
+        font-size: 14px;
+    }
+    .nav-bar{
+        justify-content: space-evenly;
+    }
+    .rest-nav{
+        display: none;
+    }
+    .hide{
+        display: contents;
+    }
+
+    body{
+        margin: 10px -60px;
+    }
+    /* nav-bar ends */
+    /* nav-banner starts */
+    .nav-banner{
+        flex-wrap: wrap;
+    }
+    .img-ban{
+        margin-top: 25px;
+    }
+    /* nav banner ends */
+    /* habit section starts   */
+    .card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* habit section ends */
+    /* run section starts */
+    .run{
+        flex-wrap: wrap;
+        margin: 20px;
+        padding: 5px;
+    }
+    .run-img{
+        margin-top: 30px;
+    }
+    /* eun section ends */
+    /* bmi section strats */
+    .bmi-sec{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bmi-chart-title{
+        text-align: center;
+    }
+    .bmi-chart{
+        margin: 0 auto;  
+    }
+    .form-opt{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 0 auto;
+    }
+    #bmi-btn{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .bmi-table{
+        margin-top: 20px;
+    }
+    /* bmi section strats */
+    /* trainer section strats */
+    .member-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .member-card-1{
+        position: relative;
+    }
+    .card-text-1{
+        position: absolute;
+        top: 200px;
+    }
+    .card-text-2{
+        position: absolute;
+        top: 550px;
+    }
+    .card-text-3{
+        position: absolute;
+        top: 920px;
+    }
+    .card-text-4{
+        position: absolute;
+        bottom: 700px;
+    }
+    .card-text-5{
+        position: absolute;
+        bottom: 350px;
+    }
+    .card-text-6{
+        position: absolute;
+        bottom: 20px;
+    }
+    /* trainer section ends */
+    /* main section done */
+
+    /* footer starts */
+    .fotter{
+        flex-direction: column;
+    }
+    .color-sp{
+        text-align: center;
+    }
+
+
+
 }
