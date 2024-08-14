@@ -57,7 +57,9 @@ nav a{
 }   
 .des{
     color: rgba(255, 255, 255, 0.5);
-    margin-top: 10px;
+    text-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
 }
 .buttons{
     margin-top: 30px;
@@ -242,6 +244,51 @@ nav a{
 .fot-h{
     text-align: center;
 }
+/* own container */
+.partition{
+    display: flex;
+    justify-content: space-around;
+}
+.titles{
+    text-align: center;
+}
+.contact-form{
+    background-color: black;
+    color: rgba(34, 34, 34, 1)
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 30px;
+}
+.color-contact{
+    color: rgba(230, 83, 60, 1);
+}
+#btn{
+    margin-left: 100px;
+}
+.icons{
+    color: rgba(230, 83, 60, 1);
+    margin: 50px;
+    padding: 50px;
+}
+.all-icons{
+    margin-top: 100px;
+}
+.fa-youtube{
+    font-size: 40px;
+}
+.fa-x-twitter{
+    font-size: 40px;
+}
+.fa-facebook{
+    font-size: 40px;        
+}
+.fa-threads{
+    font-size: 40px;
+}
+.fa-tiktok{
+    font-size: 40px;
+}
 /* footer ends */
 
 
@@ -354,7 +401,26 @@ nav a{
     .color-sp{
         text-align: center;
     }
-
-
-
+    .partition{
+        flex-wrap: wrap;
+    }
+    .all-icons{
+        margin: 20px;
+        padding: 5px;
+    }
+    .fa-youtube{
+        font-size: 40px;
+    }
+    .fa-x-twitter{
+        font-size: 40px;
+    }
+    .fa-facebook{
+        font-size: 40px;        
+    }
+    .fa-threads{
+        font-size: 40px;
+    }
+    .fa-tiktok{
+        font-size: 40px;
+    }
 }
