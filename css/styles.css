@@ -45,6 +45,44 @@ nav a{
 .hide{
     display: none;
 }
+.float-card1{
+    width: 190px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 15px;
+}
+.descript{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fa-circle{
+    color: rgba(230, 83, 60, 1);
+    font-size: 35px;
+}
+.z-2nd{
+    display: flex;
+    justify-content: space-around;
+    width: 190px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 15px;
+}
+.icon-red{
+    margin-top: 30px;
+}
+.float-card1{
+    position: absolute;
+    top: 20%;
+    left: 79%;
+}
+.z-2nd{
+    position: absolute;
+    top: 53%;
+    left: 60%;
+}
+
 /* nav bar done */
 /* nav-banner starts*/
 .nav-banner{
@@ -268,13 +306,15 @@ nav a{
 }
 .icons{
     color: rgba(230, 83, 60, 1);
-    margin: 50px;
-    padding: 50px;
+    margin: 10px;
+    padding: 20px;
 }
 .all-icons{
     margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
-.fa-youtube{
+.fa-youtube {
     font-size: 40px;
 }
 .fa-x-twitter{
@@ -289,9 +329,11 @@ nav a{
 .fa-tiktok{
     font-size: 40px;
 }
+.fa-github{
+    font-size: 40px;
+}
 /* footer ends */
-
-
+/* media query for mobile */
 @media screen and (max-width:576px) {
     .special-font
     /* nav-bar starts */
@@ -310,6 +352,16 @@ nav a{
 
     body{
         margin: 10px -60px;
+    }
+    .float-card1{
+        /* position: absolute; */
+        top: 85%;
+        left: 65%;
+    }
+    .z-2nd{
+        /* position: absolute; */
+        top: 120%;
+        left: 15%;
     }
     /* nav-bar ends */
     /* nav-banner starts */
@@ -393,7 +445,6 @@ nav a{
     }
     /* trainer section ends */
     /* main section done */
-
     /* footer starts */
     .fotter{
         flex-direction: column;
@@ -406,7 +457,10 @@ nav a{
     }
     .all-icons{
         margin: 20px;
+        margin-left: 70px;
         padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
     .fa-youtube{
         font-size: 40px;
@@ -423,4 +477,8 @@ nav a{
     .fa-tiktok{
         font-size: 40px;
     }
+    .fa-github{
+        font-size: 40px;
+    }
+    /* footer ends */
 }
